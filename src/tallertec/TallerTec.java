@@ -5,6 +5,10 @@
  */
 package tallertec;
 
+import gui.JFrameImagen;
+import herramientas.IOImage;
+import java.awt.Image;
+
 /**
  *
  * @author Roberto Cruz Leija
@@ -15,7 +19,10 @@ public class TallerTec {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Image imagenOriginal = IOImage.abrirImagen();
+        JFrameImagen frame = new JFrameImagen(imagenOriginal);
+        frame.setVisible(true);
+        System.out.println();
     }
     
 }
