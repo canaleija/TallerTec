@@ -10,6 +10,7 @@ import herramientas.Grafica;
 import herramientas.Histograma;
 import herramientas.IOImage;
 import herramientas.Iluminacion;
+import herramientas.Temperatura;
 import java.awt.Image;
 
 /**
@@ -35,7 +36,7 @@ public class TallerTec {
         grafica.agregarSerie("Verde", hVerdes);
         grafica.crearYmostrarGrafica();
         
-        Image imagenIluminada = Iluminacion.trasladarHistograma(imagenOriginal, -150);
+        Image imagenIluminada = Temperatura.modificarTemperatura(imagenOriginal, -150);
          JFrameImagen frame2 = new JFrameImagen(imagenIluminada);
         frame2.setVisible(true);
         
