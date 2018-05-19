@@ -50,7 +50,8 @@ public class Grafica {
     
     public void crearYmostrarGrafica(){
     
-        this.grafica = ChartFactory.createXYLineChart(titulo, ejeX, ejeY, series);
+        this.grafica = ChartFactory.createXYLineChart(
+                titulo, ejeX, ejeY, series);
         ChartFrame frame = new ChartFrame("Histograma de color", grafica);
         frame.setVisible(true);
         
